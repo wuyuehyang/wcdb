@@ -1,3 +1,21 @@
+## v1.0.6.2
+
+#### iOS/macOS
+
+It's a bug fixed version. Since Swift 4.1.x contains [bugs](https://github.com/Tencent/wcdb/issues/283) that make WCDB fails to compile, developers should use Xcode 10(with Swift 4.2).
+
+##### Swift
+* Compatible with Swift 4.2. The `ColumnEncodable` and `ColumnDecodable` is now changed. Check the code snippet, file template or wiki for the new usage.
+* Use `Double` column type for `Date` 
+
+FYI, a refactor is needed to fit the new conditional conformance design of Swift 4.2. We will finish it in next version.
+
+#### Android
+
+* Use C++14 and libc++_static runtime on JNI routines.
+* Fix "no implementation found" log on libwcdb.so initialization.
+* Fix ProGuard rules when importing from AAR package.
+
 ## v1.0.6
 
 #### iOS/macOS

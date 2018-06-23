@@ -23,7 +23,7 @@
 #include "sqliterk_os.h"
 #include "sqliterk_pager.h"
 #ifdef WCDB_BUILTIN_SQLCIPHER
-#include <sqlcipher/sqlite3.h>
+#include <sqlcipher.swift/sqlite3.h>
 #else //WCDB_BUILTIN_SQLCIPHER
 #include <sqlite3.h>
 #endif //WCDB_BUILTIN_SQLCIPHER

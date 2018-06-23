@@ -20,4 +20,8 @@
 
 #import <WCDBSwift/SQLite-Bridging.h>
 
-#import <sqliterk/SQLiteRepairKit.h>
+#ifdef WCDB_COCOAPODS
+#import <WCDBSwift/SQLiteRepairKit.h>
+#else //WCDB_COCOAPODS
+#import <sqliterk.swift/SQLiteRepairKit.h>
+#endif //WCDB_COCOAPODS

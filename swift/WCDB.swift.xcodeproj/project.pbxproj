@@ -7,17 +7,6 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		2349FC211FDF86F9005230E8 /* Swiftlint */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 2349FC251FDF86F9005230E8 /* Build configuration list for PBXAggregateTarget "Swiftlint" */;
-			buildPhases = (
-				2349FC261FDF870A005230E8 /* Swiftlint */,
-			);
-			dependencies = (
-			);
-			name = Swiftlint;
-			productName = Swiftlint;
-		};
 		23A1FF731FB08C780023527D /* Install templates */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 23A1FF741FB08C780023527D /* Build configuration list for PBXAggregateTarget "Install templates" */;
@@ -64,9 +53,6 @@
 		231BC02D1FC2CB1B00011C69 /* Redirectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231BC02C1FC2CB1B00011C69 /* Redirectable.swift */; };
 		231BC02F1FC2CC6E00011C69 /* TimedQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231BC02E1FC2CC6E00011C69 /* TimedQueue.swift */; };
 		231BC0311FC2CDCA00011C69 /* SteadyClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231BC0301FC2CDCA00011C69 /* SteadyClock.swift */; };
-		2321246120172A9E008146EF /* sqlcipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2321245B20172A83008146EF /* sqlcipher.framework */; };
-		2321246320172AA3008146EF /* sqliterk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2321245220172A77008146EF /* sqliterk.framework */; };
-		235619C31FD69B250085C86B /* FundamentalValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235619C21FD69B250085C86B /* FundamentalValue.swift */; };
 		235A2C481FE3763800B74208 /* Operable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235A2C471FE3763800B74208 /* Operable.swift */; };
 		237931C11FD50140003BBA5F /* TableEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237931C01FD50140003BBA5F /* TableEncoder.swift */; };
 		237931C31FD52C75003BBA5F /* TableDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237931C21FD52C75003BBA5F /* TableDecoder.swift */; };
@@ -125,9 +111,12 @@
 		238D0BCD1FAB1F7E00BC2659 /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = 238D0B701FAB1F7E00BC2659 /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		238D0BCE1FAB1F7E00BC2659 /* Tagged.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238D0B711FAB1F7E00BC2659 /* Tagged.swift */; };
 		238D0BCF1FAB1F7E00BC2659 /* ThreadLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238D0B721FAB1F7E00BC2659 /* ThreadLocal.swift */; };
+		239FBDF320C6831A0082FE24 /* FundamentalValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239FBDF220C6831A0082FE24 /* FundamentalValue.swift */; };
 		23A00CD91FBAF82B000180A8 /* Tokenize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A00CD81FBAF82B000180A8 /* Tokenize.swift */; };
 		23C8E0041FD8184300DAE97D /* CodableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C8E0031FD8184300DAE97D /* CodableType.swift */; };
 		23E737C41FB1601C00EEBC3D /* Master.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E737C31FB1601C00EEBC3D /* Master.swift */; };
+		23E8206D20C69F8F00D1901F /* sqlcipher.swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E8206820C69F6B00D1901F /* sqlcipher.swift.framework */; };
+		23E8206E20C69F8F00D1901F /* sqliterk.swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E8206120C69F6B00D1901F /* sqliterk.swift.framework */; };
 		23E9E0021FC3C5CB005DE71C /* Tracer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E9E0011FC3C5CB005DE71C /* Tracer.swift */; };
 		23E9E0051FC3C76F005DE71C /* SQLite-Bridging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E9E0041FC3C76F005DE71C /* SQLite-Bridging.swift */; };
 		23E9E0071FC3D80B005DE71C /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E9E0061FC3D80B005DE71C /* Table.swift */; };
@@ -135,47 +124,40 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2321245120172A77008146EF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2349FC2A1FDF8B14005230E8 /* sqliterk.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 233032391FB9435700101373;
-			remoteInfo = sqliterk;
-		};
-		2321245A20172A83008146EF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 23A1FF691FB084570023527D /* sqlcipher.preprocessed.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 239325C81E836A7700D677CC;
-			remoteInfo = sqlcipher;
-		};
-		2321245D20172A99008146EF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2349FC2A1FDF8B14005230E8 /* sqliterk.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 233032381FB9435700101373;
-			remoteInfo = sqliterk;
-		};
-		2321245F20172A99008146EF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 23A1FF691FB084570023527D /* sqlcipher.preprocessed.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 239325C71E836A7700D677CC;
-			remoteInfo = sqlcipher;
-		};
-		2349FC271FDF871F005230E8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 238D0AFA1FAB1F4300BC2659 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2349FC211FDF86F9005230E8;
-			remoteInfo = Swiftlint;
-		};
 		23A1FF781FB08CC50023527D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 238D0AFA1FAB1F4300BC2659 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 23A1FF731FB08C780023527D;
 			remoteInfo = "Install file template";
+		};
+		23E8206020C69F6B00D1901F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23E8205B20C69F6A00D1901F /* sqliterk.swift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 233032391FB9435700101373;
+			remoteInfo = sqliterk.swift;
+		};
+		23E8206720C69F6B00D1901F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23E8206220C69F6B00D1901F /* sqlcipher.swift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 239325C81E836A7700D677CC;
+			remoteInfo = sqlcipher.swift;
+		};
+		23E8206920C69F7200D1901F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23E8206220C69F6B00D1901F /* sqlcipher.swift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 239325C71E836A7700D677CC;
+			remoteInfo = sqlcipher.swift;
+		};
+		23E8206B20C69F7200D1901F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23E8205B20C69F6A00D1901F /* sqliterk.swift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 233032381FB9435700101373;
+			remoteInfo = sqliterk.swift;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -213,8 +195,6 @@
 		231BC02E1FC2CC6E00011C69 /* TimedQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimedQueue.swift; sourceTree = "<group>"; };
 		231BC0301FC2CDCA00011C69 /* SteadyClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteadyClock.swift; sourceTree = "<group>"; };
 		2330322D1FB9420000101373 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		2349FC2A1FDF8B14005230E8 /* sqliterk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sqliterk.xcodeproj; path = ../repair/sqliterk.xcodeproj; sourceTree = "<group>"; };
-		235619C21FD69B250085C86B /* FundamentalValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundamentalValue.swift; sourceTree = "<group>"; };
 		235A2C471FE3763800B74208 /* Operable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operable.swift; sourceTree = "<group>"; };
 		237931C01FD50140003BBA5F /* TableEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableEncoder.swift; sourceTree = "<group>"; };
 		237931C21FD52C75003BBA5F /* TableDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDecoder.swift; sourceTree = "<group>"; };
@@ -275,10 +255,12 @@
 		238D0B701FAB1F7E00BC2659 /* SQLite-Bridging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SQLite-Bridging.h"; sourceTree = "<group>"; };
 		238D0B711FAB1F7E00BC2659 /* Tagged.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tagged.swift; sourceTree = "<group>"; };
 		238D0B721FAB1F7E00BC2659 /* ThreadLocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadLocal.swift; sourceTree = "<group>"; };
+		239FBDF220C6831A0082FE24 /* FundamentalValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FundamentalValue.swift; sourceTree = "<group>"; };
 		23A00CD81FBAF82B000180A8 /* Tokenize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tokenize.swift; sourceTree = "<group>"; };
-		23A1FF691FB084570023527D /* sqlcipher.preprocessed.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sqlcipher.preprocessed.xcodeproj; path = ../sqlcipher/sqlcipher.preprocessed.xcodeproj; sourceTree = "<group>"; };
 		23C8E0031FD8184300DAE97D /* CodableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableType.swift; sourceTree = "<group>"; };
 		23E737C31FB1601C00EEBC3D /* Master.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Master.swift; sourceTree = "<group>"; };
+		23E8205B20C69F6A00D1901F /* sqliterk.swift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sqliterk.swift.xcodeproj; path = source/util/sqliterk.swift.xcodeproj; sourceTree = "<group>"; };
+		23E8206220C69F6B00D1901F /* sqlcipher.swift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sqlcipher.swift.xcodeproj; path = source/util/sqlcipher.swift.xcodeproj; sourceTree = "<group>"; };
 		23E9E0011FC3C5CB005DE71C /* Tracer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracer.swift; sourceTree = "<group>"; };
 		23E9E0041FC3C76F005DE71C /* SQLite-Bridging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SQLite-Bridging.swift"; sourceTree = "<group>"; };
 		23E9E0061FC3D80B005DE71C /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
@@ -290,8 +272,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2321246320172AA3008146EF /* sqliterk.framework in Frameworks */,
-				2321246120172A9E008146EF /* sqlcipher.framework in Frameworks */,
+				23E8206D20C69F8F00D1901F /* sqlcipher.swift.framework in Frameworks */,
+				23E8206E20C69F8F00D1901F /* sqliterk.swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +343,6 @@
 				23E9E0061FC3D80B005DE71C /* Table.swift */,
 				23E9E0081FC3D810005DE71C /* TableInterface.swift */,
 				2310C60A1FCC23520030F3D3 /* Declare.swift */,
-				235619C21FD69B250085C86B /* FundamentalValue.swift */,
 			);
 			path = interface;
 			sourceTree = "<group>";
@@ -379,22 +360,6 @@
 			path = codable;
 			sourceTree = "<group>";
 		};
-		2321244E20172A77008146EF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2321245220172A77008146EF /* sqliterk.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		2321245620172A83008146EF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2321245B20172A83008146EF /* sqlcipher.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		23794DAC1FAB206E001E79DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -406,8 +371,8 @@
 		238D0AF91FAB1F4300BC2659 = {
 			isa = PBXGroup;
 			children = (
-				2349FC2A1FDF8B14005230E8 /* sqliterk.xcodeproj */,
-				23A1FF691FB084570023527D /* sqlcipher.preprocessed.xcodeproj */,
+				23E8206220C69F6B00D1901F /* sqlcipher.swift.xcodeproj */,
+				23E8205B20C69F6A00D1901F /* sqliterk.swift.xcodeproj */,
 				238D0B0F1FAB1F7E00BC2659 /* Info.plist */,
 				238D0B111FAB1F7E00BC2659 /* source */,
 				238D0B041FAB1F4300BC2659 /* Products */,
@@ -437,6 +402,7 @@
 		238D0B121FAB1F7E00BC2659 /* abstract */ = {
 			isa = PBXGroup;
 			children = (
+				239FBDF220C6831A0082FE24 /* FundamentalValue.swift */,
 				23A00CD81FBAF82B000180A8 /* Tokenize.swift */,
 				230686DB1FAC0E5B0005EE8B /* Convertible.swift */,
 				235A2C471FE3763800B74208 /* Operable.swift */,
@@ -519,6 +485,22 @@
 			path = util;
 			sourceTree = "<group>";
 		};
+		23E8205C20C69F6A00D1901F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23E8206120C69F6B00D1901F /* sqliterk.swift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23E8206320C69F6B00D1901F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23E8206820C69F6B00D1901F /* sqlcipher.swift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -546,9 +528,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				2349FC281FDF871F005230E8 /* PBXTargetDependency */,
-				2321246020172A99008146EF /* PBXTargetDependency */,
-				2321245E20172A99008146EF /* PBXTargetDependency */,
+				23E8206A20C69F7200D1901F /* PBXTargetDependency */,
+				23E8206C20C69F7200D1901F /* PBXTargetDependency */,
 				23A1FF791FB08CC50023527D /* PBXTargetDependency */,
 			);
 			name = WCDB.swift;
@@ -565,10 +546,6 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = sanhuazhang;
 				TargetAttributes = {
-					2349FC211FDF86F9005230E8 = {
-						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
-					};
 					238D0B021FAB1F4300BC2659 = {
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 0900;
@@ -592,36 +569,35 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 2321245620172A83008146EF /* Products */;
-					ProjectRef = 23A1FF691FB084570023527D /* sqlcipher.preprocessed.xcodeproj */;
+					ProductGroup = 23E8206320C69F6B00D1901F /* Products */;
+					ProjectRef = 23E8206220C69F6B00D1901F /* sqlcipher.swift.xcodeproj */;
 				},
 				{
-					ProductGroup = 2321244E20172A77008146EF /* Products */;
-					ProjectRef = 2349FC2A1FDF8B14005230E8 /* sqliterk.xcodeproj */;
+					ProductGroup = 23E8205C20C69F6A00D1901F /* Products */;
+					ProjectRef = 23E8205B20C69F6A00D1901F /* sqliterk.swift.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
 				238D0B021FAB1F4300BC2659 /* WCDB.swift */,
 				23A1FF731FB08C780023527D /* Install templates */,
-				2349FC211FDF86F9005230E8 /* Swiftlint */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		2321245220172A77008146EF /* sqliterk.framework */ = {
+		23E8206120C69F6B00D1901F /* sqliterk.swift.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = sqliterk.framework;
-			remoteRef = 2321245120172A77008146EF /* PBXContainerItemProxy */;
+			path = sqliterk.swift.framework;
+			remoteRef = 23E8206020C69F6B00D1901F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2321245B20172A83008146EF /* sqlcipher.framework */ = {
+		23E8206820C69F6B00D1901F /* sqlcipher.swift.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = sqlcipher.framework;
-			remoteRef = 2321245A20172A83008146EF /* PBXContainerItemProxy */;
+			path = sqlcipher.swift.framework;
+			remoteRef = 23E8206720C69F6B00D1901F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -637,20 +613,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2349FC261FDF870A005230E8 /* Swiftlint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = Swiftlint;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\n#    swiftlint --path ../tools/templates/xctemplates \nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
 		23A1FF771FB08C820023527D /* Install templates */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -705,8 +667,8 @@
 				238D0B931FAB1F7E00BC2659 /* StatementInsert.swift in Sources */,
 				238D0B9C1FAB1F7E00BC2659 /* StatementVacuum.swift in Sources */,
 				238D0B941FAB1F7E00BC2659 /* StatementPragma.swift in Sources */,
-				2302098E1FBED533000D69B6 /* Database.swift in Sources */,
 				230209C01FBEE3CC000D69B6 /* Convenience.swift in Sources */,
+				2302098E1FBED533000D69B6 /* Database.swift in Sources */,
 				238D0B851FAB1F7E00BC2659 /* Order.swift in Sources */,
 				231BC02F1FC2CC6E00011C69 /* TimedQueue.swift in Sources */,
 				238D0B831FAB1F7E00BC2659 /* LiteralValue.swift in Sources */,
@@ -714,7 +676,6 @@
 				238D0B971FAB1F7E00BC2659 /* StatementRollback.swift in Sources */,
 				238D0B7E1FAB1F7E00BC2659 /* Expression.swift in Sources */,
 				238D0BCE1FAB1F7E00BC2659 /* Tagged.swift in Sources */,
-				235619C31FD69B250085C86B /* FundamentalValue.swift in Sources */,
 				238D0B9E1FAB1F7E00BC2659 /* TableConstraint.swift in Sources */,
 				238D0BCA1FAB1F7E00BC2659 /* Recyclable.swift in Sources */,
 				238D0B9A1FAB1F7E00BC2659 /* StatementTransaction.swift in Sources */,
@@ -727,6 +688,7 @@
 				238D0B801FAB1F7E00BC2659 /* Handle.swift in Sources */,
 				230209A81FBED533000D69B6 /* MultiSelect.swift in Sources */,
 				237931C51FD52CB4003BBA5F /* TableCodable.swift in Sources */,
+				239FBDF320C6831A0082FE24 /* FundamentalValue.swift in Sources */,
 				238D0B8E1FAB1F7E00BC2659 /* StatementDelete.swift in Sources */,
 				238D0B821FAB1F7E00BC2659 /* JoinClause.swift in Sources */,
 				238D0B771FAB1F7E00BC2659 /* Column.swift in Sources */,
@@ -774,45 +736,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2321245E20172A99008146EF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = sqliterk;
-			targetProxy = 2321245D20172A99008146EF /* PBXContainerItemProxy */;
-		};
-		2321246020172A99008146EF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = sqlcipher;
-			targetProxy = 2321245F20172A99008146EF /* PBXContainerItemProxy */;
-		};
-		2349FC281FDF871F005230E8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2349FC211FDF86F9005230E8 /* Swiftlint */;
-			targetProxy = 2349FC271FDF871F005230E8 /* PBXContainerItemProxy */;
-		};
 		23A1FF791FB08CC50023527D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 23A1FF731FB08C780023527D /* Install templates */;
 			targetProxy = 23A1FF781FB08CC50023527D /* PBXContainerItemProxy */;
 		};
+		23E8206A20C69F7200D1901F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = sqlcipher.swift;
+			targetProxy = 23E8206920C69F7200D1901F /* PBXContainerItemProxy */;
+		};
+		23E8206C20C69F7200D1901F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = sqliterk.swift;
+			targetProxy = 23E8206B20C69F7200D1901F /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2349FC221FDF86F9005230E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		2349FC231FDF86F9005230E8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		238D0B091FAB1F4300BC2659 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -823,11 +764,7 @@
 					armv7,
 					arm64,
 				);
-				"ARCHS[sdk=iphonesimulator*]" = (
-					"$(ARCHS_STANDARD)",
-					armv7,
-					arm64,
-				);
+				"ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD)";
 				"ARCHS[sdk=macosx*]" = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -888,7 +825,9 @@
 				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VALID_ARCHS = "armv7 arm64 x86_64";
+				"VALID_ARCHS[sdk=iphoneos*]" = "armv7 arm64";
+				"VALID_ARCHS[sdk=iphonesimulator*]" = x86_64;
+				"VALID_ARCHS[sdk=macosx*]" = x86_64;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -905,11 +844,7 @@
 					armv7,
 					arm64,
 				);
-				"ARCHS[sdk=iphonesimulator*]" = (
-					"$(ARCHS_STANDARD)",
-					armv7,
-					arm64,
-				);
+				"ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD)";
 				"ARCHS[sdk=macosx*]" = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -965,7 +900,9 @@
 				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VALID_ARCHS = "armv7 arm64 x86_64";
+				"VALID_ARCHS[sdk=iphoneos*]" = "armv7 arm64";
+				"VALID_ARCHS[sdk=iphonesimulator*]" = x86_64;
+				"VALID_ARCHS[sdk=macosx*]" = x86_64;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -1040,15 +977,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2349FC251FDF86F9005230E8 /* Build configuration list for PBXAggregateTarget "Swiftlint" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2349FC221FDF86F9005230E8 /* Debug */,
-				2349FC231FDF86F9005230E8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		238D0AFD1FAB1F4300BC2659 /* Build configuration list for PBXProject "WCDB.swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

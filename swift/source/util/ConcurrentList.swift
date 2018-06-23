@@ -20,16 +20,16 @@
 
 import Foundation
 
-internal final class ConcurrentList<Value> {
-    private var values: ContiguousArray<Value> = []
-    private let capacityCap: Int
-    private let spin = Spin()
+final class ConcurrentList<Value> {
+    var values: [Value] = []
+    let capacityCap: Int
+    let spin = Spin()
 
-    internal init(withCapacityCap capacityCap: Int) {
+    init(withCapacityCap capacityCap: Int) {
         self.capacityCap = capacityCap
     }
 
-    internal func pushBack(_ value: Value) -> Bool {
+    func pushBack(_ value: Value) -> Bool {
         spin.lock(); defer { spin.unlock() }
         if values.count < capacityCap {
             values.append(value)
@@ -38,7 +38,7 @@ internal final class ConcurrentList<Value> {
         return false
     }
 
-    internal func popBack() -> Value? {
+    func popBack() -> Value? {
         spin.lock(); defer { spin.unlock() }
         if !values.isEmpty {
             return values.removeLast()
@@ -46,7 +46,7 @@ internal final class ConcurrentList<Value> {
         return nil
     }
 
-    internal func clear() -> Int {
+    func clear() -> Int {
         spin.lock(); defer { spin.unlock() }
         let count = values.count
         values.removeAll()

@@ -23,7 +23,7 @@
 #include <errno.h>
 #include <map>
 #ifdef WCDB_BUILTIN_SQLCIPHER
-#include <sqlcipher/sqlite3.h>
+#include <sqlcipher.swift/sqlite3.h>
 #else //WCDB_BUILTIN_SQLCIPHER
 #include <sqlite3.h>
 #endif //WCDB_BUILTIN_SQLCIPHER
