@@ -4,7 +4,6 @@ apply plugin: 'maven-publish'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion '26.0.3'
 
     defaultConfig {
         minSdkVersion 14
@@ -125,7 +124,7 @@ android.libraryVariants.all { variant ->
     }
 
     // emit native symbols bundling task
-    def bundleSymTask = task("bundle${cvarName}NativeSymbols", type: Zip) {
+    task("bundle${cvarName}NativeSymbols", type: Zip) {
         def nativeBuildTask = project.tasks.findByName("externalNativeBuild${cvarName}")
 
         classifier = (varName == 'release') ? 'symbols' : "${varName}Symbols"

@@ -12,7 +12,7 @@ bintray {
     key = propertyWithDefault('BINTRAY_APIKEY', '')
     pkg {
         repo = 'wcdb'
-        name = 'wcdb-room'
+        name = 'room'
         desc = ''
         websiteUrl = 'https://github.com/Tencent/wcdb'
         issueTrackerUrl = 'https://github.com/Tencent/wcdb/issues'
@@ -86,7 +86,7 @@ afterEvaluate {
         artifact(bundleReleaseJavadoc)
         artifact(bundleReleaseSources)
 
-        artifact(bundleDebug)
+        artifact(source: bundleDebug, classifier: 'debug')
     }
 
     tasks.withType(PublishToMavenRepository) { task ->

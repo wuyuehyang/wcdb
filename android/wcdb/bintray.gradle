@@ -87,7 +87,7 @@ afterEvaluate {
         artifact(bundleReleaseSources)
         artifact(bundleReleaseNativeSymbols)
 
-        artifact(bundleDebug)
+        artifact(source: bundleDebug, classifier: 'debug')
         artifact(bundleDebugNativeSymbols)
     }
 
